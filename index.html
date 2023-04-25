@@ -11,7 +11,7 @@
         <h1>DCC121 ATV6</h1>
     </header>
     <main>
-
+        <p id="saida">A pessoa NOME tem X anos !</p>
     </main>
     <footer>
         &copy; Pablo Gal - 2023
@@ -28,6 +28,10 @@
         };
         pessoa.envelhecer();
         console.log(pessoa);
+        const p = document.getElementById('saida');
+        console.log(p);
+        p.innerText = `A pessoa ${pessoa.nome} tem ${pessoa.idade} anos !`;
+
 
     
     </script>
